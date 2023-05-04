@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300,400,600,700';
+
+$font-family: 'Ubuntu', sans-serif;
+
+body {
+    font-family: $font-family;
+    margin: 0;
+}
