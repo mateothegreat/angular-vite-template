@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@angular/common':
     specifier: ^15.2.2
@@ -47,7 +51,7 @@ dependencies:
 devDependencies:
   '@nitedani/vite-plugin-angular':
     specifier: ^15.0.6
-    version: 15.0.6(@angular/core@15.2.2)(tailwindcss@3.3.2)(typescript@4.8.4)(vite@4.1.4)(webpack@5.82.0)
+    version: 15.0.6(@angular/core@15.2.2)(tailwindcss@3.3.2)(typescript@4.8.4)(vite@4.1.5)(webpack@5.82.0)
   autoprefixer:
     specifier: ^10.4.14
     version: 10.4.14(postcss@8.4.23)
@@ -67,8 +71,8 @@ devDependencies:
     specifier: 4.8.4
     version: 4.8.4
   vite:
-    specifier: ^4.1.4
-    version: 4.1.4(less@4.1.3)(sass@1.59.3)
+    specifier: ^4.1.5
+    version: 4.1.5(less@4.1.3)(sass@1.59.3)
   vite-plugin-monaco-editor:
     specifier: ^1.1.0
     version: 1.1.0(monaco-editor@0.38.0)
@@ -2131,7 +2135,7 @@ packages:
       rxjs: 7.8.0
     dev: true
 
-  /@nitedani/vite-plugin-angular@15.0.6(@angular/core@15.2.2)(tailwindcss@3.3.2)(typescript@4.8.4)(vite@4.1.4)(webpack@5.82.0):
+  /@nitedani/vite-plugin-angular@15.0.6(@angular/core@15.2.2)(tailwindcss@3.3.2)(typescript@4.8.4)(vite@4.1.5)(webpack@5.82.0):
     resolution: {integrity: sha512-wb5GEEZx2FegqschEV46PuAFikPkggBi0IqLcffc9F5vWJxrC7SXL5oIGed+1oNkFYqcQl1PiXXuu1sRRnSUyQ==}
     peerDependencies:
       vite: '*'
@@ -2146,8 +2150,8 @@ packages:
       '@swc/core': 1.3.3
       defu: 6.1.2
       swc-ast-helpers: 0.2.2(@swc/core@1.3.3)
-      vite: 4.1.4(less@4.1.3)(sass@1.59.3)
-      vite-plugin-checker: 0.5.6(typescript@4.8.4)(vite@4.1.4)
+      vite: 4.1.5(less@4.1.3)(sass@1.59.3)
+      vite-plugin-checker: 0.5.6(typescript@4.8.4)(vite@4.1.5)
     transitivePeerDependencies:
       - '@angular/core'
       - '@angular/localize'
@@ -6108,6 +6112,31 @@ packages:
       webpack: 5.76.1(@swc/core@1.3.3)(esbuild@0.17.8)
     dev: true
 
+  /terser-webpack-plugin@5.3.7(@swc/core@1.3.3)(webpack@5.82.0):
+    resolution: {integrity: sha512-AfKwIktyP7Cu50xNjXF/6Qb5lBNzYaWpU6YfoX3uZicTx0zTy0stDDCsvjDapKsSDvOeWo5MEq4TmdBy2cNoHw==}
+    engines: {node: '>= 10.13.0'}
+    peerDependencies:
+      '@swc/core': '*'
+      esbuild: '*'
+      uglify-js: '*'
+      webpack: ^5.1.0
+    peerDependenciesMeta:
+      '@swc/core':
+        optional: true
+      esbuild:
+        optional: true
+      uglify-js:
+        optional: true
+    dependencies:
+      '@jridgewell/trace-mapping': 0.3.18
+      '@swc/core': 1.3.3
+      jest-worker: 27.5.1
+      schema-utils: 3.1.2
+      serialize-javascript: 6.0.1
+      terser: 5.17.1
+      webpack: 5.82.0(@swc/core@1.3.3)
+    dev: true
+
   /terser@5.16.3:
     resolution: {integrity: sha512-v8wWLaS/xt3nE9dgKEWhNUFP6q4kngO5B8eYFUuebsu7Dw/UNAnpUod6UHo04jSSkv8TzKHjZDSd7EXdDQAl8Q==}
     engines: {node: '>=10'}
@@ -6325,7 +6354,7 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vite-plugin-checker@0.5.6(typescript@4.8.4)(vite@4.1.4):
+  /vite-plugin-checker@0.5.6(typescript@4.8.4)(vite@4.1.5):
     resolution: {integrity: sha512-ftRyON0gORUHDxcDt2BErmsikKSkfvl1i2DoP6Jt2zDO9InfvM6tqO1RkXhSjkaXEhKPea6YOnhFaZxW3BzudQ==}
     engines: {node: '>=14.16'}
     peerDependencies:
@@ -6369,7 +6398,7 @@ packages:
       strip-ansi: 6.0.1
       tiny-invariant: 1.3.1
       typescript: 4.8.4
-      vite: 4.1.4(less@4.1.3)(sass@1.59.3)
+      vite: 4.1.5(less@4.1.3)(sass@1.59.3)
       vscode-languageclient: 7.0.0
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.8
@@ -6384,8 +6413,8 @@ packages:
       monaco-editor: 0.38.0
     dev: true
 
-  /vite@4.1.4(less@4.1.3)(sass@1.59.3):
-    resolution: {integrity: sha512-3knk/HsbSTKEin43zHu7jTwYWv81f8kgAL99G5NWBcA1LKvtvcVAC4JjBH1arBunO9kQka+1oGbrMKOjk4ZrBg==}
+  /vite@4.1.5(less@4.1.3)(sass@1.59.3):
+    resolution: {integrity: sha512-zJ0RiVkf61kpd7O+VtU6r766xgnTaIknP/lR6sJTZq3HtVJ3HGnTo5DaJhTUtYoTyS/CQwZ6yEVdc/lrmQT7dQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -6653,7 +6682,7 @@ packages:
       neo-async: 2.6.2
       schema-utils: 3.1.2
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.7(@swc/core@1.3.3)(esbuild@0.17.8)(webpack@5.76.1)
+      terser-webpack-plugin: 5.3.7(@swc/core@1.3.3)(webpack@5.82.0)
       watchpack: 2.4.0
       webpack-sources: 3.2.3
     transitivePeerDependencies:
